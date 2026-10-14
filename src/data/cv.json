@@ -28,10 +28,19 @@
     "role": "Informatics Student & Aspiring Data Engineer",
     "headline": "Informatics student focused on Data Engineering, with a foundation in Python, SQL, and web development.",
     "location": "Malang, East Java, Indonesia",
+    "aboutHeadline": "From web development to data engineering.",
     "status": "Looking for an internship",
     "focus": "Data Engineering",
-    "heroSkills": ["Python", "SQL", "MySQL", "Next.js"],
-    "stickers": ["Data Engineering", "UMM Lab Assistant"],
+    "heroSkills": [
+      "Python",
+      "SQL",
+      "MySQL",
+      "Next.js"
+    ],
+    "stickers": [
+      "Data Engineering",
+      "UMM Lab Assistant"
+    ],
     "email": "radyaiftikhar@gmail.com",
     "cvUrl": "/cv-radya-iftikhar.pdf",
     "about": [
@@ -55,27 +64,56 @@
     }
   ],
   "stats": [
-    { "value": "Sem 5", "label": "Informatics, UMM" },
-    { "value": "3.91", "label": "Current GPA" },
-    { "value": "2", "label": "Work experiences" },
-    { "value": "6 mo", "label": "SEO internship" }
+    {
+      "value": "Sem 5",
+      "label": "Informatics, UMM"
+    },
+    {
+      "value": "3.91",
+      "label": "Current GPA"
+    },
+    {
+      "value": "2",
+      "label": "Work experiences"
+    },
+    {
+      "value": "6 mo",
+      "label": "SEO internship"
+    }
   ],
   "skills": [
     {
       "group": "Data & Programming",
-      "items": ["Python", "SQL", "MySQL"]
+      "items": [
+        "Python",
+        "SQL",
+        "MySQL"
+      ]
     },
     {
       "group": "CS Fundamentals",
-      "items": ["Data Structures", "Programming Algorithms", "Computer Networks"]
+      "items": [
+        "Data Structures",
+        "Programming Algorithms",
+        "Computer Networks"
+      ]
     },
     {
       "group": "Web Development",
-      "items": ["Next.js", "Tailwind CSS", "Firebase", "Git & GitHub"]
+      "items": [
+        "Next.js",
+        "Tailwind CSS",
+        "Firebase",
+        "Git & GitHub"
+      ]
     },
     {
       "group": "Analytics & SEO",
-      "items": ["Google Analytics", "Google Search Console", "On-page SEO"]
+      "items": [
+        "Google Analytics",
+        "Google Search Console",
+        "On-page SEO"
+      ]
     }
   ],
   "experience": [
@@ -109,7 +147,11 @@
       "title": "Sales Data ETL Pipeline",
       "year": "2026",
       "description": "A pipeline that extracts raw data, cleans it, and loads it into a database for analysis. (DUMMY)",
-      "tags": ["Python", "SQL", "MySQL"],
+      "tags": [
+        "Python",
+        "SQL",
+        "MySQL"
+      ],
       "demo": "",
       "repo": "https://github.com/RadyaI/contoh-etl"
     },
@@ -117,7 +159,11 @@
       "title": "Lab Analytics Dashboard",
       "year": "2026",
       "description": "A dashboard for tracking attendance and grades from laboratory data. (DUMMY)",
-      "tags": ["Python", "SQL", "Next.js"],
+      "tags": [
+        "Python",
+        "SQL",
+        "Next.js"
+      ],
       "demo": "",
       "repo": ""
     },
@@ -125,7 +171,11 @@
       "title": "Lab Information System",
       "year": "2025",
       "description": "A web app for managing lab schedules, grades, and attendance. (DUMMY)",
-      "tags": ["Next.js", "Tailwind CSS", "Firebase"],
+      "tags": [
+        "Next.js",
+        "Tailwind CSS",
+        "Firebase"
+      ],
       "demo": "https://example.com",
       "repo": ""
     },
@@ -133,7 +183,11 @@
       "title": "SEO Audit for an Academy Website",
       "year": "2023",
       "description": "A technical and content SEO audit that produced recommendations for improving heading structure and meta tags. (DUMMY)",
-      "tags": ["Technical SEO", "Search Console", "Reporting"],
+      "tags": [
+        "Technical SEO",
+        "Search Console",
+        "Reporting"
+      ],
       "demo": "",
       "repo": ""
     }
@@ -152,5 +206,21 @@
       "detail": "Studied web programming, databases, and software engineering."
     }
   ],
-  "certifications": []
+  "certifications": [
+    {
+      "name": "Data Engineering Fundamentals (DUMMY)",
+      "issuer": "Dicoding",
+      "year": "2026"
+    },
+    {
+      "name": "SQL for Data Analysis (DUMMY)",
+      "issuer": "Coursera",
+      "year": "2026"
+    },
+    {
+      "name": "Python for Data Science (DUMMY)",
+      "issuer": "freeCodeCamp",
+      "year": "2025"
+    }
+  ]
 }

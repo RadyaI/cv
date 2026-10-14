@@ -1,10 +1,11 @@
 import cv from "@/data/cv.json";
 import SectionHeading from "@/components/SectionHeading";
-import { accents } from "@/lib/accents";
 
-const { profile, stats } = cv;
+const { profile } = cv;
 
 export default function About() {
+  const [lead, ...rest] = profile.about;
+
   return (
     <section
       aria-labelledby="judul-tentang"
@@ -18,28 +19,30 @@ export default function About() {
         sub="about"
       />
 
-      <div className="grid gap-8 lg:grid-cols-[1.4fr_1fr]">
-        <div className="brutal-card space-y-4 p-6 text-base leading-relaxed sm:p-8 sm:text-lg">
-          {profile.about.map((paragraph) => (
-            <p key={paragraph}>{paragraph}</p>
+      {}
+      <h3 className="mb-8 max-w-2xl border-l-[6px] border-ink pl-4 text-xl font-bold leading-snug sm:text-2xl">
+        {profile.aboutHeadline}
+      </h3>
+
+      {}
+      <div className="relative mb-3 mr-3">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 translate-x-3 translate-y-3 border-[3px] border-ink bg-rose"
+        />
+        <div className="relative border-[3px] border-ink bg-paper p-6 sm:p-8 lg:columns-2 lg:gap-x-12">
+          <p className="mb-5 text-lg font-semibold leading-snug sm:text-xl">
+            {lead}
+          </p>
+          {rest.map((paragraph) => (
+            <p
+              key={paragraph}
+              className="mb-5 text-base leading-relaxed last:mb-0 sm:text-lg"
+            >
+              {paragraph}
+            </p>
           ))}
         </div>
-
-        <ul className="grid grid-cols-2 gap-4">
-          {stats.map((stat, i) => (
-            <li
-              key={stat.label}
-              className={`brutal-card flex flex-col justify-between p-4 ${accents[i % accents.length]}`}
-            >
-              <span className="text-3xl font-black sm:text-4xl">
-                {stat.value}
-              </span>
-              <span className="mt-2 font-mono text-xs font-bold uppercase">
-                {stat.label}
-              </span>
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );
