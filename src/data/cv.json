@@ -144,52 +144,55 @@
   ],
   "projects": [
     {
-      "title": "Sales Data ETL Pipeline",
+      "title": "Kompresin",
       "year": "2026",
-      "description": "A pipeline that extracts raw data, cleans it, and loads it into a database for analysis. (DUMMY)",
+      "description": "A local desktop application for compressing images and videos without uploading them to the internet.",
       "tags": [
         "Python",
-        "SQL",
-        "MySQL"
+        "Pillow",
+        "tkinterdnd2",
+        "FFmpeg"
       ],
       "demo": "",
-      "repo": "https://github.com/RadyaI/contoh-etl"
+      "repo": "https://github.com/RadyaI/kompresin"
     },
     {
-      "title": "Lab Analytics Dashboard",
+      "title": "Axon",
       "year": "2026",
-      "description": "A dashboard for tracking attendance and grades from laboratory data. (DUMMY)",
+      "description": "An Integrated Computer Vision Dashboard with Pose Estimation for Classroom Engagement Detection, Analysis, and Visualization to Enhance High School Teachers' Instructional Responsiveness.",
       "tags": [
         "Python",
-        "SQL",
-        "Next.js"
+        "EmotiEffLib",
+        "OpenCV",
+        "FastAPI",
+        "MediaPipe"
       ],
-      "demo": "",
-      "repo": ""
+      "demo": "https://axon-fe.vercel.app/",
+      "repo": "https://github.com/RadyaI/axon-be"
     },
     {
-      "title": "Lab Information System",
-      "year": "2025",
-      "description": "A web app for managing lab schedules, grades, and attendance. (DUMMY)",
+      "title": "HRD.AI",
+      "year": "2026",
+      "description": "Practice your interview skills with AI-powered HR interviewers from various companies.",
       "tags": [
         "Next.js",
         "Tailwind CSS",
         "Firebase"
       ],
-      "demo": "https://example.com",
-      "repo": ""
+      "demo": "https://hrdai.radya.my.id",
+      "repo": "https://github.com/RadyaI/hrdai"
     },
     {
-      "title": "SEO Audit for an Academy Website",
-      "year": "2023",
-      "description": "A technical and content SEO audit that produced recommendations for improving heading structure and meta tags. (DUMMY)",
+      "title": "tukarilmu",
+      "year": "2026",
+      "description": "Student-led learning platform for sharing and finding course-specific educational content. Developed using Next.js and Firebase.",
       "tags": [
-        "Technical SEO",
-        "Search Console",
-        "Reporting"
+        "Next.js",
+        "Firebase",
+        "Cloudinary"
       ],
-      "demo": "",
-      "repo": ""
+      "demo": "https://tukarilmu.radya.my.id",
+      "repo": "https://github.com/RadyaI/tukarilmu"
     }
   ],
   "education": [
@@ -208,19 +211,24 @@
   ],
   "certifications": [
     {
-      "name": "Data Engineering Fundamentals (DUMMY)",
-      "issuer": "Dicoding",
-      "year": "2026"
+      "name": "JavaScript Certification",
+      "issuer": "Certiport",
+      "year": "2023",
+      "file": "/images/sertif/javascript_certiport.pdf",
+      "image": "/images/sertif/thumbs/javascript_certiport.jpg"
     },
     {
-      "name": "SQL for Data Analysis (DUMMY)",
-      "issuer": "Coursera",
-      "year": "2026"
+      "name": "SEO Specialist Internship Certificate",
+      "issuer": "Indobot Academy",
+      "year": "2023",
+      "file": "/images/sertif/magang_indobot.jpeg"
     },
     {
-      "name": "Python for Data Science (DUMMY)",
-      "issuer": "freeCodeCamp",
-      "year": "2025"
+      "name": "Moklet Idea Challenge",
+      "issuer": "SMK Telkom Malang",
+      "year": "2023",
+      "file": "/images/sertif/moklet_idea_challange.pdf",
+      "image": "/images/sertif/thumbs/moklet_idea_challange.jpg"
     }
   ]
 }
