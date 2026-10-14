@@ -64,13 +64,13 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="id" className={`${grotesk.variable} ${mono.variable}`}>
+    <html lang="en" className={`${grotesk.variable} ${mono.variable}`}>
       <body className="font-sans antialiased">
         <a
-          href="#konten"
+          href="#content"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:border-[3px] focus:border-ink focus:bg-brand focus:px-4 focus:py-2 focus:font-bold"
         >
-          Lewati ke konten utama
+          Skip to main content
         </a>
         {children}
       </body>

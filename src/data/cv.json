@@ -1,38 +1,43 @@
 {
-  "_catatan": "Semua data bertanda DUMMY perlu kamu ganti sendiri (email, link sosmed, tanggal, poin pengalaman, project, sertifikat). Jangan hapus key-nya, cukup ubah isinya. Kosongkan string (\"\") kalau link tidak ada, nanti tombolnya otomatis hilang.",
+  "_catatan": "Bagian bertanda DUMMY wajib diganti sebelum CV dipakai melamar. Jangan hapus key-nya, cukup ubah isinya. Kosongkan string (\"\") kalau link tidak ada, nanti tombolnya otomatis hilang. Kosongkan array certifications ([]) kalau belum ada sertifikat, bagiannya otomatis menyesuaikan.",
   "site": {
     "url": "https://cv.radya.my.id",
-    "title": "Muhammad Radya Iftikhar | Mahasiswa Informatika & Data Enthusiast",
+    "title": "Muhammad Radya Iftikhar | Aspiring Data Engineer",
     "shortTitle": "Radya Iftikhar",
-    "description": "CV online Muhammad Radya Iftikhar, mahasiswa Informatika Universitas Muhammadiyah Malang, alumni SMK Telkom Malang jurusan RPL, asisten laboratorium, dan SEO Specialist. Lihat keterampilan, pengalaman, dan proyek.",
+    "description": "Online CV of Radya Iftikhar, an Informatics student at UMM focused on Data Engineering. Explore skills, experience, projects, and education.",
     "keywords": [
       "Muhammad Radya Iftikhar",
       "Radya Iftikhar",
-      "CV online",
-      "portofolio web developer",
-      "mahasiswa informatika UMM",
+      "online CV",
+      "data engineer portfolio",
+      "data engineering internship",
+      "Informatics student",
+      "Universitas Muhammadiyah Malang",
+      "Python SQL",
+      "laboratory assistant",
       "SEO specialist",
-      "Next.js developer",
-      "asisten laboratorium informatika",
       "SMK Telkom Malang"
     ],
-    "locale": "id_ID",
+    "locale": "en_US",
     "copyrightYear": "2026",
     "lastUpdated": "2026-10-14"
   },
   "profile": {
     "name": "Muhammad Radya Iftikhar",
     "nickname": "Radya",
-    "role": "Informatics Student & Data Enthusiast",
-    "headline": "Mahasiswa Informatika yang suka membangun web yang rapi, cepat, dan mudah ditemukan di mesin pencari.",
-    "location": "Malang, Jawa Timur, Indonesia",
-    "status": "Terbuka untuk magang & proyek freelance",
+    "role": "Informatics Student & Aspiring Data Engineer",
+    "headline": "Informatics student focused on Data Engineering, with a foundation in Python, SQL, and web development.",
+    "location": "Malang, East Java, Indonesia",
+    "status": "Looking for an internship",
+    "focus": "Data Engineering",
+    "heroSkills": ["Python", "SQL", "MySQL", "Next.js"],
+    "stickers": ["Data Engineering", "UMM Lab Assistant"],
     "email": "radyaiftikhar@gmail.com",
     "cvUrl": "/cv-radya-iftikhar.pdf",
     "about": [
-      "Halo, aku Radya. Mahasiswa Informatika semester 5 di Universitas Muhammadiyah Malang (angkatan 2024) dengan latar belakang Rekayasa Perangkat Lunak dari SMK Telkom Malang.",
-      "Aku punya pengalaman membangun aplikasi web dan mengoptimasi website lewat SEO, mulai dari magang sebagai SEO Specialist di Indobot Academy sampai membantu praktikum sebagai asisten laboratorium.",
-      "Aku terbiasa bekerja dengan detail, suka belajar teknologi baru, dan nyaman berkolaborasi dalam tim maupun mandiri."
+      "Hi, I'm Radya. I'm a fifth-semester Informatics student at Universitas Muhammadiyah Malang (class of 2024) with a GPA of 3.91, and a graduate of SMK Telkom Malang, majoring in Software Engineering.",
+      "I started out in web development, then grew curious about the data side: how data is collected, cleaned, and delivered so it's ready to use. Right now I'm deepening my Data Engineering skills with Python and SQL.",
+      "On campus, I work as a laboratory assistant for various practical courses, from Data Structures and Programming Algorithms to Computer Networks. I also completed a six-month SEO Specialist internship at Indobot Academy, where I got used to reading website performance data. I'm currently looking for a Data Engineering internship starting from my sixth-semester break."
     ]
   },
   "socials": [
@@ -50,140 +55,85 @@
     }
   ],
   "stats": [
-    {
-      "value": "Smt 5",
-      "label": "Informatika UMM"
-    },
-    {
-      "value": "2",
-      "label": "Pengalaman kerja"
-    },
-    {
-      "value": "4",
-      "label": "Proyek unggulan"
-    },
-    {
-      "value": "3",
-      "label": "Sertifikasi"
-    }
+    { "value": "Sem 5", "label": "Informatics, UMM" },
+    { "value": "3.91", "label": "Current GPA" },
+    { "value": "2", "label": "Work experiences" },
+    { "value": "6 mo", "label": "SEO internship" }
   ],
   "skills": [
     {
-      "group": "Frontend",
-      "items": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "Next.js",
-        "Tailwind CSS"
-      ]
+      "group": "Data & Programming",
+      "items": ["Python", "SQL", "MySQL"]
     },
     {
-      "group": "Backend & Database",
-      "items": [
-        "PHP",
-        "Laravel",
-        "Node.js",
-        "MySQL",
-        "REST API"
-      ]
+      "group": "CS Fundamentals",
+      "items": ["Data Structures", "Programming Algorithms", "Computer Networks"]
     },
     {
-      "group": "SEO & Marketing",
-      "items": [
-        "On-page SEO",
-        "Keyword Research",
-        "Technical SEO",
-        "Google Search Console",
-        "Google Analytics"
-      ]
+      "group": "Web Development",
+      "items": ["Next.js", "Tailwind CSS", "Firebase", "Git & GitHub"]
     },
     {
-      "group": "Tools & Soft Skills",
-      "items": [
-        "Git & GitHub",
-        "Figma",
-        "VS Code",
-        "Kerja tim",
-        "Komunikasi",
-        "Manajemen waktu"
-      ]
+      "group": "Analytics & SEO",
+      "items": ["Google Analytics", "Google Search Console", "On-page SEO"]
     }
   ],
   "experience": [
     {
-      "role": "Asisten Laboratorium",
-      "company": "Laboratorium Informatika, Universitas Muhammadiyah Malang",
+      "role": "Laboratory Assistant",
+      "company": "Informatics Laboratory, Universitas Muhammadiyah Malang",
       "type": "Part-time",
-      "period": "2025 - Sekarang",
+      "period": "2025 - Present",
       "location": "Malang",
       "points": [
-        "Mendampingi mahasiswa selama praktikum pemrograman dan menjelaskan materi secara langsung.",
-        "Membantu menyiapkan modul, soal, dan penilaian praktikum.",
-        "Membantu mahasiswa men-debug kode dan memahami konsep dasar pemrograman."
+        "Assist students in practical sessions for Data Structures, Programming Algorithms, Computer Networks, and various other lab-based courses.",
+        "Explain course material and help students debug their code in person during lab sessions.",
+        "Help prepare lab modules and exercises, and grade practical assignments."
       ]
     },
     {
-      "role": "SEO Specialist (Magang)",
+      "role": "SEO Specialist (Intern)",
       "company": "Indobot Academy",
-      "type": "Magang",
-      "period": "2023",
+      "type": "Internship, 6 months",
+      "period": "November 2022 - April 2023",
       "location": "Malang",
       "points": [
-        "Melakukan riset kata kunci dan optimasi on-page untuk halaman website.",
-        "Menganalisis performa website menggunakan Google Search Console dan Analytics.",
-        "Menyusun laporan SEO berkala dan rekomendasi perbaikan konten."
+        "Conducted keyword research and on-page optimization for website pages.",
+        "Analyzed website performance with Google Search Console and Google Analytics to identify improvement opportunities.",
+        "Prepared regular SEO reports and content improvement recommendations."
       ]
     }
   ],
   "projects": [
     {
-      "title": "Sistem Informasi Praktikum",
+      "title": "Sales Data ETL Pipeline",
       "year": "2026",
-      "description": "Aplikasi web untuk mengelola jadwal, nilai, dan presensi praktikum laboratorium. (DUMMY)",
-      "tags": [
-        "Next.js",
-        "TypeScript",
-        "MySQL"
-      ],
+      "description": "A pipeline that extracts raw data, cleans it, and loads it into a database for analysis. (DUMMY)",
+      "tags": ["Python", "SQL", "MySQL"],
       "demo": "",
-      "repo": "https://github.com/username/sistem-praktikum"
+      "repo": "https://github.com/RadyaI/contoh-etl"
     },
     {
-      "title": "Landing Page UMKM",
+      "title": "Lab Analytics Dashboard",
+      "year": "2026",
+      "description": "A dashboard for tracking attendance and grades from laboratory data. (DUMMY)",
+      "tags": ["Python", "SQL", "Next.js"],
+      "demo": "",
+      "repo": ""
+    },
+    {
+      "title": "Lab Information System",
       "year": "2025",
-      "description": "Website company profile untuk UMKM lokal dengan fokus pada kecepatan dan SEO. (DUMMY)",
-      "tags": [
-        "Next.js",
-        "Tailwind CSS",
-        "SEO"
-      ],
+      "description": "A web app for managing lab schedules, grades, and attendance. (DUMMY)",
+      "tags": ["Next.js", "Tailwind CSS", "Firebase"],
       "demo": "https://example.com",
       "repo": ""
     },
     {
-      "title": "Aplikasi Kasir Sederhana",
-      "year": "2025",
-      "description": "Aplikasi point-of-sale dengan manajemen produk, transaksi, dan laporan penjualan. (DUMMY)",
-      "tags": [
-        "Laravel",
-        "MySQL",
-        "Bootstrap"
-      ],
-      "demo": "",
-      "repo": "https://github.com/username/kasir"
-    },
-    {
-      "title": "Audit SEO Website Akademi",
+      "title": "SEO Audit for an Academy Website",
       "year": "2023",
-      "description": "Audit teknis dan konten SEO yang menghasilkan rekomendasi perbaikan struktur heading dan meta tag. (DUMMY)",
-      "tags": [
-        "Technical SEO",
-        "Search Console",
-        "Reporting"
-      ],
+      "description": "A technical and content SEO audit that produced recommendations for improving heading structure and meta tags. (DUMMY)",
+      "tags": ["Technical SEO", "Search Console", "Reporting"],
       "demo": "",
       "repo": ""
     }
@@ -191,32 +141,16 @@
   "education": [
     {
       "school": "Universitas Muhammadiyah Malang",
-      "major": "S1 Informatika",
-      "period": "2024 - Sekarang",
-      "detail": "Semester 5. Asisten laboratorium Informatika."
+      "major": "Bachelor's Degree in Informatics",
+      "period": "2024 - Present",
+      "detail": "Semester 5, GPA 3.91. Laboratory assistant at the Informatics Laboratory."
     },
     {
       "school": "SMK Telkom Malang",
-      "major": "Rekayasa Perangkat Lunak",
+      "major": "Software Engineering",
       "period": "2021 - 2024",
-      "detail": "Mendalami pemrograman web, basis data, dan rekayasa perangkat lunak. (tahun DUMMY)"
+      "detail": "Studied web programming, databases, and software engineering."
     }
   ],
-  "certifications": [
-    {
-      "name": "Dasar SEO & Digital Marketing",
-      "issuer": "Indobot Academy",
-      "year": "2023"
-    },
-    {
-      "name": "Belajar Dasar Pemrograman Web",
-      "issuer": "Dicoding",
-      "year": "2024"
-    },
-    {
-      "name": "Responsive Web Design",
-      "issuer": "freeCodeCamp",
-      "year": "2024"
-    }
-  ]
+  "certifications": []
 }
