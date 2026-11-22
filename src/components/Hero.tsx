@@ -1,154 +1,146 @@
-import Image from "next/image";
 import cv from "@/data/cv.json";
 
-const { profile, socials } = cv;
-
-const [focusFirst, ...focusRest] = profile.focus.split(" ");
-
-const heroLinks = socials.filter(
-  (s) => s.url && ["GitHub", "LinkedIn"].includes(s.label),
-);
+const pipeline = [
+  { step: "Extract", note: "collect" },
+  { step: "Transform", note: "clean" },
+  { step: "Load", note: "deliver" },
+];
 
 export default function Hero() {
+  const { profile, stats, socials } = cv;
+
   return (
-    <section
-      id="home"
-      aria-labelledby="judul-utama"
-      className="mx-auto grid max-w-6xl gap-12 px-4 pb-12 pt-8 sm:px-6 sm:pb-20 sm:pt-12 lg:grid-cols-[1.4fr_1fr] lg:items-center"
-    >
-      {/* ============ KIRI ============ */}
-      <div>
-        <p
-          lang="en"
-          className="inline-flex items-center gap-2 border-[3px] border-ink bg-mint px-3 py-1 font-mono text-xs font-bold uppercase sm:text-sm"
-        >
-          <span
-            aria-hidden="true"
-            className="h-2.5 w-2.5 rounded-full border-2 border-ink bg-ink"
-          />
-          {profile.status}
-        </p>
+    <section id="home" className="relative mx-auto max-w-6xl px-4 pb-16 pt-14 sm:px-6 lg:pt-24">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -top-24 left-1/2 h-72 w-[40rem] -translate-x-1/2 rounded-full bg-accent/10 blur-3xl"
+      />
 
-        <h1 id="judul-utama" className="mt-6">
-          <span className="block font-mono text-sm font-bold uppercase tracking-widest sm:text-base">
-            {profile.name}
-          </span>
-          <span className="mt-3 block break-words text-[1.9rem] font-black uppercase leading-[1.1] sm:text-6xl lg:text-[4.25rem]">
-            {focusFirst}{" "}
-            <span className="inline-block border-[3px] border-ink bg-brand px-2 shadow-brutal-sm">
-              {focusRest.join(" ")}
+      <div className="relative grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="fade-up">
+          <p className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-3 py-1 font-mono text-xs text-accent">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-70 motion-reduce:animate-none" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-          </span>
-        </h1>
+            {profile.status}
+          </p>
 
-        <p className="mt-6 border-l-[6px] border-ink pl-3 font-mono text-sm font-bold sm:text-base">
-          {profile.role} · {profile.location}
-        </p>
+          <h1 className="mt-6 text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
+            {profile.name.replace(profile.nickname, "").trim()}{" "}
+            <span className="text-accent">{profile.nickname}</span>
+          </h1>
 
-        <p className="mt-5 max-w-xl text-lg leading-relaxed sm:text-xl">
-          {profile.headline}
-        </p>
+          <p className="mt-4 font-mono text-sm text-cyan sm:text-base">{profile.role}</p>
+          <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted">
+            {profile.headline}
+          </p>
 
-        <ul className="mt-5 flex flex-wrap gap-2">
-          {profile.heroSkills.map((skill) => (
-            <li key={skill} className="tag bg-paper">
-              {skill}
-            </li>
-          ))}
-        </ul>
+          <ul className="mt-5 flex flex-wrap gap-2">
+            {profile.stickers.map((s) => (
+              <li key={s} className="tag">
+                {s}
+              </li>
+            ))}
+          </ul>
 
-        <div className="mt-8 flex flex-wrap items-center gap-4">
-          {profile.cvUrl && (
+          <div className="mt-8 flex flex-wrap gap-3">
             <a href={profile.cvUrl} download className="btn btn-primary">
-              Download CV (PDF)
+              Download CV ↓
             </a>
-          )}
-          <a href={`mailto:${profile.email}`} className="btn">
-            Contact Me
-          </a>
+            <a href={`mailto:${profile.email}`} className="btn">
+              Email me
+            </a>
+          </div>
+
+          <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 font-mono text-sm">
+            {socials.map((s) => (
+              <li key={s.label}>
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted transition-colors hover:text-accent"
+                >
+                  {s.label} ↗
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
 
-        <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2 font-mono text-sm font-bold">
-          {heroLinks.map((link) => (
-            <li key={link.label}>
-              <a
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer me"
-                className="underline decoration-2 underline-offset-4 hover:bg-brand"
-              >
-                {link.label} ↗
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="fade-up [animation-delay:150ms]">
+          <div className="card overflow-hidden shadow-2xl shadow-black/40">
+            <div className="flex items-center gap-2 border-b border-line bg-raised px-4 py-2.5">
+              <span className="h-3 w-3 rounded-full bg-[#ff5f57]" />
+              <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
+              <span className="h-3 w-3 rounded-full bg-[#28c840]" />
+              <span className="ml-2 font-mono text-xs text-muted">profile.py</span>
+            </div>
+            <div className="break-words p-5 font-mono text-sm leading-7">
+              <p className="text-muted"># who is this?</p>
+              <p>
+                <span className="text-cyan">class</span>{" "}
+                <span className="text-amber">{profile.nickname}</span>:
+              </p>
+              <p className="pl-6">
+                focus = <span className="text-accent">&quot;{profile.focus}&quot;</span>
+              </p>
+              <p className="pl-6">
+                stack = [
+                {profile.heroSkills.map((s, i) => (
+                  <span key={s}>
+                    <span className="text-accent">&quot;{s}&quot;</span>
+                    {i < profile.heroSkills.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+                ]
+              </p>
+              <p className="pl-6">
+                status = <span className="text-accent">&quot;{profile.status}&quot;</span>
+              </p>
+              <p className="mt-2">
+                <span className="text-muted">&gt;&gt;&gt;</span> {profile.nickname}().
+                <span className="text-cyan">ready_to_work</span>()
+                <span
+                  aria-hidden
+                  className="ml-1 inline-block h-4 w-2 translate-y-0.5 animate-pulse bg-accent motion-reduce:animate-none"
+                />
+              </p>
+            </div>
+          </div>
+
+          <ol
+            aria-label="Data pipeline"
+            className="mt-6 flex items-center gap-2 font-mono text-xs"
+          >
+            {pipeline.map((p, i) => (
+              <li key={p.step} className="flex flex-1 items-center gap-2">
+                <div className="card flex-1 px-3 py-2 text-center">
+                  <p className="font-bold uppercase text-fg">{p.step}</p>
+                  <p className="text-muted">{p.note}</p>
+                </div>
+                {i < pipeline.length - 1 && (
+                  <span aria-hidden className="relative hidden h-px w-6 bg-line sm:block">
+                    <span className="flow-dot absolute -top-[3px] h-2 w-2 rounded-full bg-accent" />
+                  </span>
+                )}
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
 
-      {/* ============ KANAN ============ */}
-      <aside
-        aria-label="Profile summary"
-        className="mx-auto w-full max-w-md space-y-8 lg:max-w-none"
-      >
-        {/* Foto + blok warna offset + stiker */}
-        <div className="relative mb-3 mr-3">
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 translate-x-3 translate-y-3 border-[3px] border-ink bg-rose"
-          />
-          <div className="relative aspect-square overflow-hidden border-[3px] border-ink bg-sky">
-            <Image
-              src="/images/Radya.jpg"
-              alt={`Photo of ${profile.name}`}
-              fill
-              priority
-              sizes="(min-width: 1024px) 440px, (min-width: 640px) 448px, 100vw"
-              className="object-cover object-top"
-            />
+      <dl className="relative mt-16 grid grid-cols-2 gap-4 md:grid-cols-4">
+        {stats.map((s) => (
+          <div key={s.label} className="card card-hover p-4">
+            <dd className="font-mono text-3xl font-bold text-accent sm:text-4xl">
+              {s.value}
+            </dd>
+            <dt className="mt-1 text-xs text-muted">{s.label}</dt>
           </div>
-
-          <span className="absolute -right-3 -top-3 z-10 rotate-3 border-[3px] border-ink bg-brand px-3 py-1 font-mono text-xs font-bold uppercase shadow-brutal-sm sm:text-sm">
-            {profile.stickers[0]}
-          </span>
-          <span className="absolute -left-3 bottom-6 z-10 -rotate-3 border-[3px] border-ink bg-mint px-3 py-1 font-mono text-xs font-bold uppercase shadow-brutal-sm sm:text-sm">
-            {profile.stickers[1]}
-          </span>
-        </div>
-
-        {/* Kartu bergaya query SQL (dekoratif, statis) */}
-        <div className="border-[3px] border-ink bg-ink text-bg">
-          <div
-            aria-hidden="true"
-            className="flex items-center gap-1.5 border-b-[3px] border-bg/20 px-3 py-2"
-          >
-            <span className="h-3 w-3 border-2 border-bg bg-rose" />
-            <span className="h-3 w-3 border-2 border-bg bg-brand" />
-            <span className="h-3 w-3 border-2 border-bg bg-mint" />
-            <span className="ml-2 font-mono text-xs opacity-60">query.sql</span>
-          </div>
-          <pre
-            aria-hidden="true"
-            className="overflow-x-auto px-4 py-4 font-mono text-xs leading-relaxed sm:text-sm"
-          >
-            <code>
-              <span className="text-brand">SELECT</span> name, role{"\n"}
-              <span className="text-brand">FROM</span>{" "}
-              {profile.nickname.toLowerCase()}
-              {"\n"}
-              <span className="text-brand">WHERE</span> open_to_internship ={" "}
-              <span className="text-mint">TRUE</span>;
-            </code>
-          </pre>
-          <p className="border-t-[3px] border-bg/20 px-4 py-3 font-mono text-xs sm:text-sm">
-            <span className="opacity-60">-- contact:</span>{" "}
-            <a
-              href={`mailto:${profile.email}`}
-              className="break-all font-bold underline decoration-2 underline-offset-4 hover:text-brand"
-            >
-              {profile.email}
-            </a>
-          </p>
-        </div>
-      </aside>
+        ))}
+      </dl>
     </section>
   );
 }

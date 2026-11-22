@@ -1,22 +1,21 @@
 type Props = {
-  id: string;
-  no: string;
+  index: string;
   title: string;
-  sub: string;
+  hint?: string;
 };
 
-export default function SectionHeading({ id, no, title, sub }: Props) {
+export default function SectionHeading({ index, title, hint }: Props) {
   return (
-    <div className="mb-8 sm:mb-12">
-      <p className="font-mono text-xs font-bold uppercase tracking-widest sm:text-sm">
-        {no} / {sub}
+    <div className="mb-10">
+      <p className="font-mono text-sm text-accent">
+        <span className="text-muted">{"// "}</span>
+        {index}
       </p>
-      <h2
-        id={id}
-        className="mt-2 inline-block border-[3px] border-ink bg-brand px-4 py-2 text-3xl font-black uppercase shadow-brutal-sm sm:text-5xl"
-      >
-        {title}
-      </h2>
+      <div className="mt-2 flex items-center gap-4">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">{title}</h2>
+        <span aria-hidden className="hidden h-px flex-1 bg-line sm:block" />
+      </div>
+      {hint && <p className="mt-3 max-w-2xl text-muted">{hint}</p>}
     </div>
   );
 }

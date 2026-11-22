@@ -1,234 +1,234 @@
 {
-  "_catatan": "Bagian bertanda DUMMY wajib diganti sebelum CV dipakai melamar. Jangan hapus key-nya, cukup ubah isinya. Kosongkan string (\"\") kalau link tidak ada, nanti tombolnya otomatis hilang. Kosongkan array certifications ([]) kalau belum ada sertifikat, bagiannya otomatis menyesuaikan.",
-  "site": {
-    "url": "https://cv.radya.my.id",
-    "title": "Muhammad Radya Iftikhar | Aspiring Data Engineer",
-    "shortTitle": "Radya Iftikhar",
-    "description": "Online CV of Radya Iftikhar, an Informatics student at UMM focused on Data Engineering. Explore skills, experience, projects, and education.",
-    "keywords": [
-      "Muhammad Radya Iftikhar",
-      "Radya Iftikhar",
-      "online CV",
-      "data engineer portfolio",
-      "data engineering internship",
-      "Informatics student",
-      "Universitas Muhammadiyah Malang",
-      "Python SQL",
-      "laboratory assistant",
-      "SEO specialist",
-      "SMK Telkom Malang"
+    "_catatan": "Bagian bertanda DUMMY wajib diganti sebelum CV dipakai melamar. Jangan hapus key-nya, cukup ubah isinya. Kosongkan string (\"\") kalau link tidak ada, nanti tombolnya otomatis hilang. Kosongkan array certifications ([]) kalau belum ada sertifikat, bagiannya otomatis menyesuaikan.",
+    "site": {
+        "url": "https://cv.radya.my.id",
+        "title": "Muhammad Radya Iftikhar | Aspiring Data Engineer",
+        "shortTitle": "Radya Iftikhar",
+        "description": "Online CV of Radya Iftikhar, an Informatics student at UMM focused on Data Engineering. Explore skills, experience, projects, and education.",
+        "keywords": [
+            "Muhammad Radya Iftikhar",
+            "Radya Iftikhar",
+            "online CV",
+            "data engineer portfolio",
+            "data engineering internship",
+            "Informatics student",
+            "Universitas Muhammadiyah Malang",
+            "Python SQL",
+            "laboratory assistant",
+            "SEO specialist",
+            "SMK Telkom Malang"
+        ],
+        "locale": "en_US",
+        "copyrightYear": "2026",
+        "lastUpdated": "2026-10-14"
+    },
+    "profile": {
+        "name": "Muhammad Radya Iftikhar",
+        "nickname": "Radya",
+        "role": "Informatics Student & Aspiring Data Engineer",
+        "headline": "Informatics student focused on Data Engineering, with a foundation in Python, SQL, and web development.",
+        "location": "Malang, East Java, Indonesia",
+        "aboutHeadline": "From web development to data engineering.",
+        "status": "Looking for an internship",
+        "focus": "Data Engineering",
+        "heroSkills": [
+            "Python",
+            "SQL",
+            "MySQL",
+            "Next.js"
+        ],
+        "stickers": [
+            "Data Engineering",
+            "UMM Lab Assistant"
+        ],
+        "email": "radyaiftikhar@gmail.com",
+        "cvUrl": "/cv-radya-iftikhar.pdf",
+        "about": [
+            "Hi, I'm Radya. I'm a fifth-semester Informatics student at Universitas Muhammadiyah Malang (class of 2024) with a GPA of 3.91, and a graduate of SMK Telkom Malang, majoring in Software Engineering.",
+            "I started out in web development, then grew curious about the data side: how data is collected, cleaned, and delivered so it's ready to use. Right now I'm deepening my Data Engineering skills with Python and SQL.",
+            "On campus, I work as a laboratory assistant for various practical courses, from Data Structures and Programming Algorithms to Computer Networks. I also completed a six-month SEO Specialist internship at Indobot Academy, where I got used to reading website performance data. I'm currently looking for a Data Engineering internship starting from my sixth-semester break."
+        ]
+    },
+    "socials": [
+        {
+            "label": "GitHub",
+            "url": "https://github.com/RadyaI"
+        },
+        {
+            "label": "LinkedIn",
+            "url": "https://www.linkedin.com/in/radyaa"
+        },
+        {
+            "label": "Instagram",
+            "url": "https://www.instagram.com/radyaif"
+        }
     ],
-    "locale": "en_US",
-    "copyrightYear": "2026",
-    "lastUpdated": "2026-10-14"
-  },
-  "profile": {
-    "name": "Muhammad Radya Iftikhar",
-    "nickname": "Radya",
-    "role": "Informatics Student & Aspiring Data Engineer",
-    "headline": "Informatics student focused on Data Engineering, with a foundation in Python, SQL, and web development.",
-    "location": "Malang, East Java, Indonesia",
-    "aboutHeadline": "From web development to data engineering.",
-    "status": "Looking for an internship",
-    "focus": "Data Engineering",
-    "heroSkills": [
-      "Python",
-      "SQL",
-      "MySQL",
-      "Next.js"
+    "stats": [
+        {
+            "value": "Sem 5",
+            "label": "Informatics, UMM"
+        },
+        {
+            "value": "3.91",
+            "label": "Current GPA"
+        },
+        {
+            "value": "2",
+            "label": "Work experiences"
+        },
+        {
+            "value": "6 mo",
+            "label": "SEO internship"
+        }
     ],
-    "stickers": [
-      "Data Engineering",
-      "UMM Lab Assistant"
+    "skills": [
+        {
+            "group": "Data & Programming",
+            "items": [
+                "Python",
+                "SQL",
+                "MySQL"
+            ]
+        },
+        {
+            "group": "CS Fundamentals",
+            "items": [
+                "Data Structures",
+                "Programming Algorithms",
+                "Computer Networks"
+            ]
+        },
+        {
+            "group": "Web Development",
+            "items": [
+                "Next.js",
+                "Tailwind CSS",
+                "Firebase",
+                "Git & GitHub"
+            ]
+        },
+        {
+            "group": "Analytics & SEO",
+            "items": [
+                "Google Analytics",
+                "Google Search Console",
+                "On-page SEO"
+            ]
+        }
     ],
-    "email": "radyaiftikhar@gmail.com",
-    "cvUrl": "/cv-radya-iftikhar.pdf",
-    "about": [
-      "Hi, I'm Radya. I'm a fifth-semester Informatics student at Universitas Muhammadiyah Malang (class of 2024) with a GPA of 3.91, and a graduate of SMK Telkom Malang, majoring in Software Engineering.",
-      "I started out in web development, then grew curious about the data side: how data is collected, cleaned, and delivered so it's ready to use. Right now I'm deepening my Data Engineering skills with Python and SQL.",
-      "On campus, I work as a laboratory assistant for various practical courses, from Data Structures and Programming Algorithms to Computer Networks. I also completed a six-month SEO Specialist internship at Indobot Academy, where I got used to reading website performance data. I'm currently looking for a Data Engineering internship starting from my sixth-semester break."
+    "experience": [
+        {
+            "role": "Laboratory Assistant",
+            "company": "Informatics Laboratory, Universitas Muhammadiyah Malang",
+            "type": "Part-time",
+            "period": "2025 - Present",
+            "location": "Malang",
+            "points": [
+                "Assist students in practical sessions for Data Structures, Programming Algorithms, Computer Networks, and various other lab-based courses.",
+                "Explain course material and help students debug their code in person during lab sessions.",
+                "Help prepare lab modules and exercises, and grade practical assignments."
+            ]
+        },
+        {
+            "role": "SEO Specialist (Intern)",
+            "company": "Indobot Academy",
+            "type": "Internship, 6 months",
+            "period": "November 2022 - April 2023",
+            "location": "Malang",
+            "points": [
+                "Conducted keyword research and on-page optimization for website pages.",
+                "Analyzed website performance with Google Search Console and Google Analytics to identify improvement opportunities.",
+                "Prepared regular SEO reports and content improvement recommendations."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "title": "Kompresin",
+            "year": "2026",
+            "description": "A local desktop application for compressing images and videos without uploading them to the internet.",
+            "tags": [
+                "Python",
+                "Pillow",
+                "tkinterdnd2",
+                "FFmpeg"
+            ],
+            "demo": "",
+            "repo": "https://github.com/RadyaI/kompresin"
+        },
+        {
+            "title": "Axon",
+            "year": "2026",
+            "description": "An Integrated Computer Vision Dashboard with Pose Estimation for Classroom Engagement Detection, Analysis, and Visualization to Enhance High School Teachers' Instructional Responsiveness.",
+            "tags": [
+                "Python",
+                "EmotiEffLib",
+                "OpenCV",
+                "FastAPI",
+                "MediaPipe"
+            ],
+            "demo": "https://axon-fe.vercel.app/",
+            "repo": "https://github.com/RadyaI/axon-be"
+        },
+        {
+            "title": "HRD.AI",
+            "year": "2026",
+            "description": "Practice your interview skills with AI-powered HR interviewers from various companies.",
+            "tags": [
+                "Next.js",
+                "Tailwind CSS",
+                "Firebase"
+            ],
+            "demo": "https://hrdai.radya.my.id",
+            "repo": "https://github.com/RadyaI/hrdai"
+        },
+        {
+            "title": "tukarilmu",
+            "year": "2026",
+            "description": "Student-led learning platform for sharing and finding course-specific educational content. Developed using Next.js and Firebase.",
+            "tags": [
+                "Next.js",
+                "Firebase",
+                "Cloudinary"
+            ],
+            "demo": "https://tukarilmu.radya.my.id",
+            "repo": "https://github.com/RadyaI/tukarilmu"
+        }
+    ],
+    "education": [
+        {
+            "school": "Universitas Muhammadiyah Malang",
+            "major": "Bachelor's Degree in Informatics",
+            "period": "2024 - Present",
+            "detail": "Semester 5, GPA 3.91. Laboratory assistant at the Informatics Laboratory."
+        },
+        {
+            "school": "SMK Telkom Malang",
+            "major": "Software Engineering",
+            "period": "2021 - 2024",
+            "detail": "Studied web programming, databases, and software engineering."
+        }
+    ],
+    "certifications": [
+        {
+            "name": "JavaScript Certification",
+            "issuer": "Certiport",
+            "year": "2023",
+            "file": "/images/sertif/javascript_certiport.pdf",
+            "image": "/images/sertif/thumbs/javascript_certiport.jpg"
+        },
+        {
+            "name": "SEO Specialist Internship Certificate",
+            "issuer": "Indobot Academy",
+            "year": "2023",
+            "file": "/images/sertif/magang_indobot.jpeg"
+        },
+        {
+            "name": "Moklet Idea Challenge",
+            "issuer": "SMK Telkom Malang",
+            "year": "2023",
+            "file": "/images/sertif/moklet_idea_challange.pdf",
+            "image": "/images/sertif/thumbs/moklet_idea_challange.jpg"
+        }
     ]
-  },
-  "socials": [
-    {
-      "label": "GitHub",
-      "url": "https://github.com/RadyaI"
-    },
-    {
-      "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/radyaa"
-    },
-    {
-      "label": "Instagram",
-      "url": "https://www.instagram.com/radyaif"
-    }
-  ],
-  "stats": [
-    {
-      "value": "Sem 5",
-      "label": "Informatics, UMM"
-    },
-    {
-      "value": "3.91",
-      "label": "Current GPA"
-    },
-    {
-      "value": "2",
-      "label": "Work experiences"
-    },
-    {
-      "value": "6 mo",
-      "label": "SEO internship"
-    }
-  ],
-  "skills": [
-    {
-      "group": "Data & Programming",
-      "items": [
-        "Python",
-        "SQL",
-        "MySQL"
-      ]
-    },
-    {
-      "group": "CS Fundamentals",
-      "items": [
-        "Data Structures",
-        "Programming Algorithms",
-        "Computer Networks"
-      ]
-    },
-    {
-      "group": "Web Development",
-      "items": [
-        "Next.js",
-        "Tailwind CSS",
-        "Firebase",
-        "Git & GitHub"
-      ]
-    },
-    {
-      "group": "Analytics & SEO",
-      "items": [
-        "Google Analytics",
-        "Google Search Console",
-        "On-page SEO"
-      ]
-    }
-  ],
-  "experience": [
-    {
-      "role": "Laboratory Assistant",
-      "company": "Informatics Laboratory, Universitas Muhammadiyah Malang",
-      "type": "Part-time",
-      "period": "2025 - Present",
-      "location": "Malang",
-      "points": [
-        "Assist students in practical sessions for Data Structures, Programming Algorithms, Computer Networks, and various other lab-based courses.",
-        "Explain course material and help students debug their code in person during lab sessions.",
-        "Help prepare lab modules and exercises, and grade practical assignments."
-      ]
-    },
-    {
-      "role": "SEO Specialist (Intern)",
-      "company": "Indobot Academy",
-      "type": "Internship, 6 months",
-      "period": "November 2022 - April 2023",
-      "location": "Malang",
-      "points": [
-        "Conducted keyword research and on-page optimization for website pages.",
-        "Analyzed website performance with Google Search Console and Google Analytics to identify improvement opportunities.",
-        "Prepared regular SEO reports and content improvement recommendations."
-      ]
-    }
-  ],
-  "projects": [
-    {
-      "title": "Kompresin",
-      "year": "2026",
-      "description": "A local desktop application for compressing images and videos without uploading them to the internet.",
-      "tags": [
-        "Python",
-        "Pillow",
-        "tkinterdnd2",
-        "FFmpeg"
-      ],
-      "demo": "",
-      "repo": "https://github.com/RadyaI/kompresin"
-    },
-    {
-      "title": "Axon",
-      "year": "2026",
-      "description": "An Integrated Computer Vision Dashboard with Pose Estimation for Classroom Engagement Detection, Analysis, and Visualization to Enhance High School Teachers' Instructional Responsiveness.",
-      "tags": [
-        "Python",
-        "EmotiEffLib",
-        "OpenCV",
-        "FastAPI",
-        "MediaPipe"
-      ],
-      "demo": "https://axon-fe.vercel.app/",
-      "repo": "https://github.com/RadyaI/axon-be"
-    },
-    {
-      "title": "HRD.AI",
-      "year": "2026",
-      "description": "Practice your interview skills with AI-powered HR interviewers from various companies.",
-      "tags": [
-        "Next.js",
-        "Tailwind CSS",
-        "Firebase"
-      ],
-      "demo": "https://hrdai.radya.my.id",
-      "repo": "https://github.com/RadyaI/hrdai"
-    },
-    {
-      "title": "tukarilmu",
-      "year": "2026",
-      "description": "Student-led learning platform for sharing and finding course-specific educational content. Developed using Next.js and Firebase.",
-      "tags": [
-        "Next.js",
-        "Firebase",
-        "Cloudinary"
-      ],
-      "demo": "https://tukarilmu.radya.my.id",
-      "repo": "https://github.com/RadyaI/tukarilmu"
-    }
-  ],
-  "education": [
-    {
-      "school": "Universitas Muhammadiyah Malang",
-      "major": "Bachelor's Degree in Informatics",
-      "period": "2024 - Present",
-      "detail": "Semester 5, GPA 3.91. Laboratory assistant at the Informatics Laboratory."
-    },
-    {
-      "school": "SMK Telkom Malang",
-      "major": "Software Engineering",
-      "period": "2021 - 2024",
-      "detail": "Studied web programming, databases, and software engineering."
-    }
-  ],
-  "certifications": [
-    {
-      "name": "JavaScript Certification",
-      "issuer": "Certiport",
-      "year": "2023",
-      "file": "/images/sertif/javascript_certiport.pdf",
-      "image": "/images/sertif/thumbs/javascript_certiport.jpg"
-    },
-    {
-      "name": "SEO Specialist Internship Certificate",
-      "issuer": "Indobot Academy",
-      "year": "2023",
-      "file": "/images/sertif/magang_indobot.jpeg"
-    },
-    {
-      "name": "Moklet Idea Challenge",
-      "issuer": "SMK Telkom Malang",
-      "year": "2023",
-      "file": "/images/sertif/moklet_idea_challange.pdf",
-      "image": "/images/sertif/thumbs/moklet_idea_challange.jpg"
-    }
-  ]
 }

@@ -1,46 +1,52 @@
 import cv from "@/data/cv.json";
-
-const { profile, socials } = cv;
+import SectionHeading from "@/components/SectionHeading";
 
 export default function Contact() {
-  return (
-    <section
-      aria-labelledby="judul-kontak"
-      className="border-t-[3px] border-ink bg-brand"
-    >
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
-        <span id="contact" />
-        <p className="font-mono text-xs font-bold uppercase tracking-widest sm:text-sm">
-          06 / contact
-        </p>
-        <h2
-          id="judul-kontak"
-          className="mt-3 max-w-3xl text-4xl font-black uppercase leading-[1] sm:text-6xl"
-        >
-          Let&apos;s work together.
-        </h2>
-        <p className="mt-5 max-w-xl text-lg leading-relaxed">
-          Have an internship opportunity or a project in mind? Send me a message and I&apos;ll get back to you as soon as I can.          usahakan membalas secepatnya.
-        </p>
+  const { profile, socials } = cv;
 
-        <address className="mt-8 flex flex-wrap gap-4 not-italic">
-          <a href={`mailto:${profile.email}`} className="btn btn-dark">
-            {profile.email}
-          </a>
-          {socials
-            .filter((s) => s.url)
-            .map((social) => (
-              <a
-                key={social.label}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer me"
-                className="btn"
-              >
-                {social.label} ↗
-              </a>
+  return (
+    <section id="contact" className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+      <SectionHeading index="06_contact" title="Contact" />
+
+      <div className="card relative overflow-hidden p-8 sm:p-12">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent/10 blur-3xl"
+        />
+        <div className="relative">
+          <p className="font-mono text-sm text-accent">{profile.status}</p>
+          <h3 className="mt-3 max-w-2xl text-3xl font-bold leading-tight sm:text-4xl">
+            Let&apos;s build something with data.
+          </h3>
+          <p className="mt-4 max-w-xl text-lg text-muted">
+            I&apos;m open to Data Engineering internships. Send me an email or grab my CV
+            below.
+          </p>
+
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a href={`mailto:${profile.email}`} className="btn btn-primary">
+              {profile.email}
+            </a>
+            <a href={profile.cvUrl} download className="btn">
+              Download CV ↓
+            </a>
+          </div>
+
+          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 font-mono text-sm">
+            {socials.map((s) => (
+              <li key={s.label}>
+                <a
+                  href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted transition-colors hover:text-accent"
+                >
+                  {s.label} ↗
+                </a>
+              </li>
             ))}
-        </address>
+          </ul>
+        </div>
       </div>
     </section>
   );

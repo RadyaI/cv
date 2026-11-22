@@ -13,50 +13,72 @@ export default function Image() {
           width: "100%",
           height: "100%",
           display: "flex",
-          background: "#fffdf5",
-          padding: 48,
+          flexDirection: "column",
+          justifyContent: "space-between",
+          background: "#0a0e14",
+          padding: 72,
+          border: "2px solid #1f2937",
         }}
       >
         <div
           style={{
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            width: "100%",
-            height: "100%",
-            border: "10px solid #111111",
-            background: "#ffd93d",
-            padding: 56,
-            boxShadow: "16px 16px 0 #111111",
+            alignItems: "center",
+            gap: 16,
+            fontSize: 28,
+            color: "#4ade80",
           }}
         >
           <div
             style={{
+              width: 16,
+              height: 16,
+              borderRadius: 999,
+              background: "#4ade80",
+            }}
+          />
+          {cv.profile.status}
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div
+            style={{
               display: "flex",
-              fontSize: 28,
-              fontWeight: 700,
-              letterSpacing: 4,
-              textTransform: "uppercase",
+              fontSize: 84,
+              fontWeight: 800,
+              lineHeight: 1.05,
+              color: "#e6edf3",
             }}
           >
-            Curriculum Vitae
+            {cv.profile.name}
           </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <div
+            style={{
+              display: "flex",
+              fontSize: 36,
+              marginTop: 20,
+              color: "#8b98a9",
+            }}
+          >
+            {cv.profile.role}
+          </div>
+        </div>
+
+        <div style={{ display: "flex", gap: 12, fontSize: 24, color: "#22d3ee" }}>
+          {cv.profile.heroSkills.map((s) => (
             <div
+              key={s}
               style={{
                 display: "flex",
-                fontSize: 92,
-                fontWeight: 900,
-                lineHeight: 1,
-                textTransform: "uppercase",
+                padding: "6px 16px",
+                border: "1px solid #1f2937",
+                borderRadius: 8,
+                background: "#161d29",
               }}
             >
-              {cv.profile.name}
+              {s}
             </div>
-            <div style={{ display: "flex", fontSize: 34, marginTop: 24 }}>
-              {cv.profile.role}
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     ),

@@ -1,29 +1,29 @@
 import cv from "@/data/cv.json";
 
-const { site, profile, socials, skills, education } = cv;
-
 export default function JsonLd() {
+  const { site, profile, socials, education } = cv;
+
   const data = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: profile.name,
     alternateName: profile.nickname,
     url: site.url,
+    email: `mailto:${profile.email}`,
     jobTitle: profile.role,
     description: site.description,
-    email: `mailto:${profile.email}`,
     address: {
       "@type": "PostalAddress",
       addressLocality: "Malang",
-      addressRegion: "Jawa Timur",
+      addressRegion: "East Java",
       addressCountry: "ID",
     },
     alumniOf: education.map((e) => ({
       "@type": "EducationalOrganization",
       name: e.school,
     })),
-    knowsAbout: skills.flatMap((group) => group.items),
-    sameAs: socials.map((s) => s.url).filter(Boolean),
+    knowsAbout: cv.skills.flatMap((g) => g.items),
+    sameAs: socials.map((s) => s.url),
   };
 
   return (

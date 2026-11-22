@@ -1,13 +1,19 @@
 import cv from "@/data/cv.json";
 
-const { site, profile } = cv;
-
 export default function Footer() {
+  const { site, profile } = cv;
+
   return (
-    <footer className="border-t-[3px] border-ink bg-ink px-4 py-6 text-center font-mono text-xs text-bg sm:text-sm">
-      <p>
-        © {site.copyrightYear} {profile.name}. Built with Next.js & Tailwind CSS.
-      </p>
+    <footer className="border-t border-line">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-6 font-mono text-xs text-muted sm:px-6">
+        <p>
+          © {site.copyrightYear} {profile.name}
+        </p>
+        <p>Last updated {site.lastUpdated}</p>
+        <a href="#content" className="no-print transition-colors hover:text-accent">
+          Back to top ↑
+        </a>
+      </div>
     </footer>
   );
 }
