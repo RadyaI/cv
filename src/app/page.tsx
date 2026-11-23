@@ -3,6 +3,8 @@ import cv from "@/data/cv.json";
 import JsonLd from "@/components/JsonLd";
 import TechText from "@/components/TechText";
 import Lanyard from "@/components/Lanyard";
+import GhostCursor from "@/components/reactbits/GhostCursor";
+import SplashCursor from "@/components/reactbits/SplashCursor";
 
 const {
   site,
@@ -142,6 +144,42 @@ const projectSpans = [
 export default function Home() {
   return (
     <>
+      {/* <GhostCursor
+        color="#1852cf"
+        size={80}
+        trailLength={50}
+        inertia={0.1}
+        turbulence={0.5}
+        drift={0.3}
+        bloomStrength={0.6}
+        grainIntensity={0.05}
+        detail={1}
+        brightness={1}
+        bloomRadius={1}
+        edgeIntensity={0}
+        fadeDelayMs={1000}
+        fadeDurationMs={1500}
+        clickPuff
+        intro
+      /> */}
+
+      <SplashCursor
+        rainbow={false}
+        colors={['#093fd3', '#08e62d']}
+        size={1}
+        force={1}
+        swirl={3}
+        trail={1}
+        clickSplash
+        colorSpeed={1}
+        intensity={1}
+        momentum={1}
+        shading={1}
+        glow={0}
+        quality="high"
+        intro
+        contained={false}
+      />
       <JsonLd />
 
       {/* ---------------------------- NAV ---------------------------- */}
@@ -473,8 +511,8 @@ export default function Home() {
                           target="_blank"
                           rel="noopener noreferrer"
                           className={`btn ${dark
-                              ? "border-paper bg-transparent text-paper shadow-none"
-                              : ""
+                            ? "border-paper bg-transparent text-paper shadow-none"
+                            : ""
                             }`}
                           aria-label={`Source code of ${p.title}`}
                         >
