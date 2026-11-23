@@ -1,6 +1,8 @@
 import type { ReactNode } from "react";
 import cv from "@/data/cv.json";
 import JsonLd from "@/components/JsonLd";
+import TechText from "@/components/TechText";
+import Lanyard from "@/components/Lanyard";
 
 const {
   site,
@@ -193,9 +195,26 @@ export default function Home() {
 
             <h1 className="relative mt-6 select-none">
               <span className="sr-only">{firstName} </span>
-              <span className="block text-[clamp(4.5rem,22vw,20rem)] font-black uppercase leading-[0.8] tracking-[-0.06em]">
-                {profile.nickname}
-              </span>
+
+              <TechText
+                text={profile.nickname.toUpperCase()}
+                fontWeight={900}
+                fontSize={320}
+                letterSpacing={-0.06}
+                align="left"
+                reveal="letter"
+                intro="type"
+                introDuration={1.6}
+                style={{
+                  zIndex: "99999999",
+                  width: "82vw",
+                  height: "min(26.4vw, 384px)",
+                  marginTop: "calc(min(4.95vw, 72px) * -1 + 1.4vw)",
+                  marginBottom: "calc(min(4.95vw, 72px) * -1 + 0.4vw)",
+                  marginLeft: "calc(-4.1vw + 1vw)",
+                }}
+              />
+
               <span className="outline-text -mt-[0.02em] ml-[6vw] block text-[clamp(3rem,14vw,13rem)] font-black uppercase leading-[0.85] tracking-[-0.05em]">
                 {lastName}
               </span>
@@ -407,9 +426,8 @@ export default function Home() {
               return (
                 <article
                   key={p.title}
-                  className={`hard hard-hover flex flex-col p-6 ${
-                    projectSpans[i % projectSpans.length]
-                  } ${dark ? "on-dark bg-ink text-paper" : ""}`}
+                  className={`hard hard-hover flex flex-col p-6 ${projectSpans[i % projectSpans.length]
+                    } ${dark ? "on-dark bg-ink text-paper" : ""}`}
                 >
                   <div className="flex items-start justify-between gap-3">
                     <span className="outline-text text-6xl font-black leading-none">
@@ -454,11 +472,10 @@ export default function Home() {
                           href={p.repo}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className={`btn ${
-                            dark
+                          className={`btn ${dark
                               ? "border-paper bg-transparent text-paper shadow-none"
                               : ""
-                          }`}
+                            }`}
                           aria-label={`Source code of ${p.title}`}
                         >
                           Source ↗
@@ -530,36 +547,81 @@ export default function Home() {
         </Section>
 
         {/* ------------------------- CONTACT -------------------------- */}
-        <Section id="contact" index="06" title="Contact" dark>
-          <p className="font-mono text-sm uppercase">{profile.status}</p>
-          <p className="mt-4 text-[clamp(4rem,17vw,14rem)] font-black uppercase leading-[0.8] tracking-[-0.05em]">
-            Say hi.
-          </p>
+        <section
+          id="contact"
+          className="on-dark relative overflow-hidden border-b-[3px] border-ink bg-ink text-paper"
+        >
+          {/* Teks (di atas canvas, tapi tidak menghalangi drag) */}
+          <div className="pointer-events-none relative z-10 mx-auto grid max-w-[90rem] gap-8 px-4 py-16 sm:px-8 sm:py-24 lg:min-h-[48rem] lg:grid-cols-12">
+            <header className="lg:col-span-3">
+              <div className="lg:sticky lg:top-24">
+                <p className="outline-text text-7xl font-black leading-none lg:text-[8rem]">
+                  06
+                </p>
+                <h2 className="mt-3 text-3xl font-black uppercase leading-none tracking-tight sm:text-4xl">
+                  Contact
+                </h2>
+              </div>
+            </header>
 
-          <a
-            href={`mailto:${profile.email}`}
-            className="mt-10 block break-all text-2xl font-black underline decoration-4 underline-offset-8 hover:bg-paper hover:text-ink sm:text-5xl"
-          >
-            {profile.email}
-          </a>
+            <div className="lg:col-span-5">
+              <p className="font-mono text-sm uppercase">{profile.status}</p>
+              <p className="mt-4 text-[clamp(4rem,11vw,10rem)] font-black uppercase leading-[0.8] tracking-[-0.05em]">
+                Say hi.
+              </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a href={profile.cvUrl} download className="btn">
-              Download CV ↓
-            </a>
-            {socials.map((s) => (
               <a
-                key={s.label}
-                href={s.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn border-paper bg-transparent text-paper shadow-none hover:bg-paper hover:text-ink"
+                href={`mailto:${profile.email}`}
+                className="pointer-events-auto mt-10 inline-block break-all text-2xl font-black underline decoration-4 underline-offset-8 hover:bg-paper hover:text-ink sm:text-3xl xl:text-4xl"
               >
-                {s.label} ↗
+                {profile.email}
               </a>
-            ))}
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href={profile.cvUrl}
+                  download
+                  className="btn pointer-events-auto"
+                >
+                  Download CV ↓
+                </a>
+                {socials.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn pointer-events-auto border-paper bg-transparent text-paper shadow-none hover:bg-paper hover:text-ink"
+                  >
+                    {s.label} ↗
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
-        </Section>
+
+          {/* Lanyard: HP di bawah teks, desktop menutupi seluruh section */}
+          <div
+            className="relative ml-20 h-[34rem] w-full lg:absolute lg:inset-0 lg:z-0 lg:h-auto"
+            aria-label="Kartu ID interaktif, seret atau klik untuk membalik"
+          >
+            <Lanyard
+              frontImage="/card-front.png"
+              backImage="/card-back.png"
+              cardColor="#f3f3f1"
+              strapColor="#f3f3f1"
+              metal="silver"
+              finish="matte"
+              cornerRadius={0.1}
+              size={0.5}
+              strapLength={0.4}
+              anchor="right"
+              gravity={1}
+              breeze={0.4}
+              intro={false}
+            />
+          </div>
+        </section>
       </main>
 
       {/* -------------------------- FOOTER --------------------------- */}
